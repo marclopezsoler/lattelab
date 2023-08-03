@@ -4,8 +4,12 @@
    overflow: hidden;
    user-select: none;
    gap: var(--gap);
+   width: 100vw;
 
-   border-bottom: 1px solid black;
+   border-bottom: 1.5px solid black;
+
+   margin: 0;
+  padding: 0;
 }
 
 .marquee_content{
@@ -14,7 +18,7 @@
    justify-content: space-around;
    min-width: 100%;
    gap: var(--gap);
-   animation: scroll 35s linear infinite;
+   animation: scroll 60s linear infinite;
    list-style: none;
 
    li{

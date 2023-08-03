@@ -1,0 +1,17 @@
+.header_menu{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 2em;
+   padding: 0.4em 0 0.4em 0;
+   width: 100vw;
+   border-bottom: 1.5px solid black;
+   
+}
+
+.header_item{
+   font-size: 14px;
+   text-decoration: none;
+   color: black;
+}

@@ -11,8 +11,18 @@ export default function HeaderRotatingLabel() {
          <li>{marqueeText}</li>
          <li>{marqueeText}</li>
          <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
       </ul>
       <ul className={styles.marquee_content} aria-hidden="true">
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
+         <li>{marqueeText}</li>
          <li>{marqueeText}</li>
          <li>{marqueeText}</li>
          <li>{marqueeText}</li>

@@ -2,3 +2,29 @@
    margin: 0;
    padding: 0;
 }
+
+/* width */
+::-webkit-scrollbar {
+   width: 10px;
+   position: absolute;
+ }
+ 
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: white;
+   border: 1px solid black;
+   border-top: none;
+   border-bottom: none;
+   z-index: 2;
+ }
+ 
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #8BB0A6;
+   border: 1px solid black;
+ }
+ 
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   background: #66857d;
+ }
