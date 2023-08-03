@@ -1,0 +1,35 @@
+.marquee{
+   --gap: 3px;
+   display: flex;
+   overflow: hidden;
+   user-select: none;
+   gap: var(--gap);
+
+   border-bottom: 1px solid black;
+}
+
+.marquee_content{
+   flex-shrink: 0;
+   display: flex;
+   justify-content: space-around;
+   min-width: 100%;
+   gap: var(--gap);
+   animation: scroll 35s linear infinite;
+   list-style: none;
+
+   li{
+      font-size: 12px;
+      padding: 6px 0px 6px 0px;
+      font-weight: 400;
+   }
+}
+
+@keyframes scroll {
+   from{
+      transform: translateX(0);
+   }
+
+   to{
+      transform: translateX(calc(-100% - var(--gap)));
+   }
+}
