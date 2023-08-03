@@ -7,7 +7,7 @@ export default function Footer (){
    return(
       <div className={`${styles.footer} ${inter.className}`}>
          <p>©2023 LATTELAB</p>
-         <span>MADE BY <a href='https://marclopez.oddsolutionslab.com'>MARC LÓPEZ</a></span>
+         <span>MADE BY <a href='https://marclopez.oddsolutionslab.com' target='_blank'>MARC LÓPEZ</a></span>
       </div>
    )
 }

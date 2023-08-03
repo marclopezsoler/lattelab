@@ -3,6 +3,11 @@ import Image from "next/image";
 import styles from "@/styles/Components/Landing_Hero.module.scss";
 
 export default function Landing_Hero() {
+
+  function showNewsletter(){
+    alert('newsletter')
+  }
+
   return (
    <div className={`${styles.landing_hero_reset} ${styles.hero_container}`}>
       <div className={styles.image_parent}>
@@ -17,7 +22,7 @@ export default function Landing_Hero() {
         <h1>
           cause<span>good coffee</span>is only for <em>cool</em> people
         </h1>
-        <a className={styles.button} href="/">
+        <a className={styles.button} href="/" onClick={showNewsletter}>
           Subscribe to <em>lattelab!</em>
         </a>
       </div>

@@ -6,9 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function HeaderMenu() {
   return (
     <div className={`${styles.header_menu} ${inter.className}`}>
-      <a href="#" className={styles.header_item}>OUR MISSION</a>
-      <a href="#" className={styles.header_item}>THE COFFEE</a>
-      <a href="#" className={styles.header_item}>FIND US</a>
+      <a href="#our_mission" className={styles.header_item}>OUR MISSION</a>
+      <a href="#the_coffee" className={styles.header_item}>THE COFFEE</a>
+      <a href="#find_us" className={styles.header_item}>FIND US</a>
     </div>
   );
 }
