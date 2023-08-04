@@ -22,6 +22,10 @@
   width: 100vw;
   font-style: italic;
   font-weight: bold;
+
+  max-width: 80%;
+  min-width: 400px;
+  text-align: center;
 }
 
 .grid {
@@ -55,6 +59,7 @@
     align-items: center;
     justify-content: center;
     width: 65%;
+    padding: 4em 0;
   }
 
   section:nth-child(3) {
@@ -101,8 +106,9 @@
     max-width: 80%;
 
     h2 {
-      font-size: 22px;
+      font-size: 24px;
       font-weight: 400;
+      padding-bottom: 0.4em;
     }
 
     span {
@@ -110,10 +116,53 @@
     }
   }
 
-  .coffee_carroussel{
-    max-width: 80%;
+  .coffee_carroussel {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1em;    
+    gap: 1em;
+  }
+}
+
+@media (max-width: 1080px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .coffee_shop {
+    .coffee_carroussel {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2vw;
+    }
+  }
+}
+
+@media (max-width: 550px){
+  .coffee_shop {
+    .coffee_carroussel {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    section:nth-child(2) {
+      border-top: 1.5px solid black;
+      border-bottom: 1.5px solid black;
+    }
+  }
+
+  .h2 {
+    font-size: calc(12px + 4vw);
+    padding: 0.4em 4em;
+    max-width: 80%;
+    min-width: auto;
   }
 }

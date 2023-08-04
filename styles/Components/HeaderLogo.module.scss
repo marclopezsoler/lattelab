@@ -5,8 +5,7 @@
   width: 100vw;
   height: fit-content;
   border-bottom: 1.5px solid black;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding: 1em 0;
   height: 10vh;
 
   a{
@@ -18,4 +17,16 @@
 .logo {
   height: 10vh;
   margin-left: 30px;
+}
+
+@media (max-width: 400px){
+.logo_container{
+  padding: 1em 0;
+  height: 20vw;
+}
+
+  .logo{
+    width: 80vw;
+    margin-left: 0;
+  }
 }

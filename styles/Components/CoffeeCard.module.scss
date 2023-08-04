@@ -1,18 +1,19 @@
 @import "../variables.scss";
 
 .card_parent {
-position: relative;
-  
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   .card {
+    width: calc(175px + 10vw);
     position: relative;
 
     .img {
-      width: 20vw;
+      width: inherit;
       height: auto;
       border: 1.5px solid black;
     }
@@ -27,11 +28,11 @@ position: relative;
     background-color: white;
     opacity: 0;
     transition: 0.25s ease-in;
-    width: fit-content;
+    width: calc(175px + 10vw);
     height: fit-content;
 
     .img2 {
-      width: 20vw;
+      width: inherit;
       height: auto;
       opacity: 0;
     }
@@ -57,13 +58,25 @@ position: relative;
       }
     }
 
-    .card2{
+    .card2 {
       opacity: 0.5;
     }
 
     .title {
       transform: translateY(0px);
       opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .card_parent {
+    .card {
+      width: 80vw;
+    }
+
+    .card2 {
+      width: 80vw;
     }
   }
 }

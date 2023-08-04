@@ -22,9 +22,6 @@ export default function Landing_Hero() {
         <h1>
           cause<span>good coffee</span>is only for <em>cool</em> people
         </h1>
-        <a className={styles.button} href="/" onClick={showNewsletter}>
-          Subscribe to <em>lattelab!</em>
-        </a>
       </div>
     </div>
   );
