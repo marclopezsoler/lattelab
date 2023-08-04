@@ -4,10 +4,6 @@ import styles from "@/styles/Components/Landing_Hero.module.scss";
 
 export default function Landing_Hero() {
 
-  function showNewsletter(){
-    // alert('newsletter')
-  }
-
   return (
    <div className={`${styles.landing_hero_reset} ${styles.hero_container}`}>
       <div className={styles.image_parent}>

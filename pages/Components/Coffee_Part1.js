@@ -9,7 +9,7 @@ export default function Coffee_Part1() {
       <h2 className={styles.h2}>WHY WILL YOU FALL IN LOVE WITH OUR COFFEE?</h2>
       <div className={styles.grid}>
         <section className={styles.imgParent}>
-          <Image src={coffee_1} />
+          <Image src={coffee_1} alt="coffee beans"/>
         </section>
         <section>
           <div className={styles.content}>
@@ -38,7 +38,7 @@ export default function Coffee_Part1() {
           </div>
         </section>
         <section className={styles.imgParent}>
-          <Image src={coffee_2} />
+          <Image src={coffee_2} alt="coffee beans 2"/>
         </section>
       </div>
     </>

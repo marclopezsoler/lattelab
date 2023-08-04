@@ -11,7 +11,7 @@ export default function About_Part2() {
         <br />
       </div>
       <div className={styles.text2}>
-        <Image src={thumbs_up} />
+        <Image src={thumbs_up} alt="thumbs up"/>
         <h4>
           <em>
             <b>GOOD COFFEE</b>

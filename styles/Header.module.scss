@@ -9,3 +9,18 @@
   margin: 0;
   padding: 0;
 }
+
+.navParent{
+  position: relative;
+}
+
+.navbar{
+  border-top: 1.5px solid black;
+  position: absolute;
+}
+
+.navbar.stickyHeader{
+  position: fixed;
+  top: 0;
+  z-index: 999999;
+}

@@ -8,7 +8,7 @@ export default function About_Part1() {
     <div className={styles.containerFirst}>
       <section className={styles.firstContent}>
         <div>
-          <Image src={iconImg} />
+          <Image src={iconImg} alt="lattelab icon"/>
           <p>
             Having a coffee should be considered as the best feeling anyone can
             experience.
@@ -21,7 +21,7 @@ export default function About_Part1() {
         </div>
       </section>
       <section className={styles.secondContent}>
-        <Image src={shopImg} />
+        <Image src={shopImg} alt="coffee machine"/>
       </section>
     </div>
   );

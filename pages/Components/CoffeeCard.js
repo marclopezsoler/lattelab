@@ -5,11 +5,11 @@ export default function CoffeeCard({ url, title }) {
   return (
     <div className={styles.card_parent}>
       <div className={styles.card}>
-        <Image src={url} className={styles.img} />
+        <Image src={url} className={styles.img} alt={title}/>
       </div>
       <h3 className={styles.title}>{title}</h3>
       <div className={styles.card2}>
-        <Image src={url} className={styles.img2} />
+        <Image src={url} className={styles.img2} alt={title}/>
       </div>
     </div>
   );
