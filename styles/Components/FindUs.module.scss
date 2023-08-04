@@ -38,6 +38,11 @@
   border-top: 1.5px solid black;
   text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   h2 {
     color: black;
     padding: 0.4em 0;
@@ -45,6 +50,10 @@
     font-size: 28px;
     font-style: italic;
     font-weight: bold;
+
+    max-width: 80%;
+    min-width: 400px;
+    text-align: center;
   }
 }
 
@@ -107,13 +116,15 @@
     padding: 0 2em;
 
     h2 {
-      font-size: 20px;
+      max-width: 80%;
+      font-size: calc(19px + 0.4vw);
       font-weight: 500;
     }
 
     span {
+      max-width: 80%;
       font-weight: 200;
-      font-size: 14px;
+      font-size: calc(12px + 0.2vw);
     }
   }
 
@@ -122,9 +133,113 @@
     width: 100%;
     background-color: $green;
     color: white;
+
+    p {
+      max-width: 80%;
+    }
   }
 }
 
 .shop:nth-child(1) {
   border-top: none;
+}
+
+@media (max-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+
+    section {
+      width: 100vw;
+    }
+  }
+  .mapParent {
+    .map {
+      height: 110%;
+      width: 110%;
+      border-bottom: 1.5px solid black;
+    }
+
+    .closedText {
+      max-width: 80%;
+    }
+  }
+
+  .shops_grid {
+    height: 100%;
+    border-top: 1.5px solid black;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+
+    section {
+      width: 100vw;
+    }
+  }
+
+  .shop {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    h2 {
+      font-size: calc(12px + 4vw);
+      padding: 0.4em 4em;
+      max-width: 80%;
+      min-width: auto;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100vw;
+
+    section {
+      width: 100vw;
+      height: 100%;
+    }
+    section:nth-child(2) {
+      border-left: none;
+    }
+  }
+
+  .shop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0;
+
+    .address {
+      height: 100%;
+      padding: 2em 1em;
+      border-bottom: 1.5px solid black;
+    }
+
+    .upcoming {
+      height: 100%;
+      padding: 0.4em 0.4em;
+      border-bottom: 1.5px solid black;
+    }
+  }
+
+  .lastShop {
+    .upcoming {
+      border-bottom: none;
+    }
+  }
 }

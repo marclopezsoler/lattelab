@@ -7,7 +7,7 @@ export default function Locations (){
         <Shop address={"Pg. de Gràcia, 92, Barcelona"} />
         <Shop address={"Pg. de St. Joan, 7, Barcelona"} />
         <Shop address={"Rambla del Poblenou, 74, Barcelona"} />
-        <Shop address={"C/ dels Tallers, 2, Barcelona"} />
+        <Shop address={"C/ dels Tallers, 2, Barcelona"} lastShop={true} />
       </div>
    )
 }
