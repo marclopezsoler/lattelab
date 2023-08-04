@@ -5,7 +5,7 @@ import styles from "@/styles/Components/Landing_Hero.module.scss";
 export default function Landing_Hero() {
 
   function showNewsletter(){
-    alert('newsletter')
+    // alert('newsletter')
   }
 
   return (

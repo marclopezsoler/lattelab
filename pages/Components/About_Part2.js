@@ -22,9 +22,9 @@ export default function About_Part2() {
       </div>
       <p className={styles.text3}>
         <br />
-        IN <em>LATTELAB</em> WE MAY NOT BE COOL,
+        IN LATTELAB WE MAY NOT BE COOL,
         <br />
-        BUT WE ARE <span>GOOD PEOPLE WITH GREAT COFFEE</span>
+        BUT WE ARE GOOD PEOPLE WITH GREAT COFFEE
       </p>
     </div>
   );
