@@ -1,5 +1,5 @@
 import styles from "@/styles/Components/HeaderLogo.module.scss";
-import headerLogo from "@/public/assets/logos/Full_Lockup/Full_Lockup_1.svg";
+import headerLogo from "@/public/assets/logos/Full_Lockup/FULL_LOCKUP_1.svg";
 import Image from "next/image";
 
 export default function HeaderLogo() {
