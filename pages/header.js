@@ -4,7 +4,7 @@ import HeaderLogo from "./Components/HeaderLogo";
 import HeaderMenu from "./Components/HeaderMenu";
 import { useEffect, useRef, useState } from "react";
 
-export default function Header() {
+export default function Header({setNavbarHeight}) {
   const elementRef = useRef(null);
   const navbar_ref = useRef(null);
   const [stickyHeader, setStickyHeader] = useState(false);
@@ -15,6 +15,8 @@ export default function Header() {
         const height = elementRef.current.clientHeight;
         const navbar_height = navbar_ref.current.clientHeight;
         const scrollPos = window.scrollY;
+        
+        setNavbarHeight(navbar_height);
         
         if (scrollPos >= height) {
           console.log(height, navbar_height);
@@ -30,7 +32,7 @@ export default function Header() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setNavbarHeight]);
 
   return (
     <>

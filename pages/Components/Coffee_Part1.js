@@ -3,10 +3,12 @@ import coffee_1 from "@/public/assets/website-images/coffee_1.jpg";
 import coffee_2 from "@/public/assets/website-images/coffee_2.jpg";
 import Image from "next/image";
 
-export default function Coffee_Part1() {
+export default function Coffee_Part1({navbar_height}) {
+  const topSpace = navbar_height + 20;
+
   return (
     <>
-      <h2 className={styles.h2}>WHY WILL YOU FALL IN LOVE WITH OUR COFFEE?</h2>
+      <h2 className={styles.h2} style={{paddingTop: topSpace, paddingBottom: topSpace}} >WHY WILL YOU FALL IN LOVE WITH OUR COFFEE?</h2>
       <div className={styles.grid}>
         <section className={styles.imgParent}>
           <Image src={coffee_1} alt="coffee beans"/>

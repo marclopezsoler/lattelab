@@ -8,13 +8,13 @@ import Contact from './Components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home (){
+export default function Home ({navbar_height}){
    return(
       <main className={`${styles.main} ${inter.className}`}>
          <Landing_Hero />
-         <Coffee />
-         <AboutUs />
-         <FindUs />
+         <Coffee navbar_height={navbar_height}/>
+         <AboutUs navbar_height={navbar_height}/>
+         <FindUs navbar_height={navbar_height}/>
          <Contact />
       </main>
    )
