@@ -19,7 +19,6 @@ export default function Header({setNavbarHeight}) {
         setNavbarHeight(navbar_height);
         
         if (scrollPos >= height) {
-          console.log(height, navbar_height);
           setStickyHeader(true);
         } else {
           setStickyHeader(false);

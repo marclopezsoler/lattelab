@@ -28,8 +28,13 @@
 
   transition: 0.2s;
 
-  &:hover{
+  &:hover, &:checked{
     font-weight: 700;
+  }
+
+  &.active{
+    font-weight: 700;
+    transition-delay: 0.1s;
   }
 }
 
