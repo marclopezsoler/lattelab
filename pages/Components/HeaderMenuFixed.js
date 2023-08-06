@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function HeaderMenu() {
+export default function HeaderMenuFixed({state}) {
   const [activeSection, setActiveSection] = useState(null);
   const observer = useRef(null);
 
@@ -38,7 +38,7 @@ export default function HeaderMenu() {
   }, []);
 
   return (
-    <nav className={`${styles.header_menu} ${inter.className}`}>
+    <nav className={`${styles.header_menu_fixed} ${inter.className} ${state ? styles.show : ''}`}>
       <div className={styles.header_child}>
         <a
           href="#the_coffee"

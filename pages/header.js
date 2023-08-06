@@ -3,6 +3,7 @@ import HeaderRotatingLabel from "./Components/HeaderRotatingLabel";
 import HeaderLogo from "./Components/HeaderLogo";
 import HeaderMenu from "./Components/HeaderMenu";
 import { useEffect, useRef, useState } from "react";
+import HeaderMenuFixed from "./Components/HeaderMenuFixed";
 
 export default function Header({setNavbarHeight}) {
   const elementRef = useRef(null);
@@ -48,7 +49,7 @@ export default function Header({setNavbarHeight}) {
             stickyHeader ? styles.stickyHeader : ""
           }`}
         >
-          <HeaderMenu />
+          <HeaderMenuFixed state={stickyHeader}/>
         </nav>
       </div>
     </>
